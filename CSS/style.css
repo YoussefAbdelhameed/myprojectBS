@@ -1,0 +1,131 @@
+*
+{
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+text-transform: capitalize;
+}
+body
+{
+min-height: 100vh;
+overflow-x: hidden;
+}
+/* for scroll body */
+body::-webkit-scrollbar
+{
+width: 15px;
+}
+body::-webkit-scrollbar-track
+{
+border-left: 2px solid rgba(0,0,0,.05);
+background-color: #f7f6f9;
+}
+body::-webkit-scrollbar-thumb{
+background-color: #333;
+border-radius: 5px;
+}
+.img
+{
+width: 80px;
+}
+a{
+    text-decoration: none;
+}
+.img img
+{
+width: 100%;
+display: flex;
+object-fit: contain;
+border-radius: 10px;
+
+}
+
+
+.carousel img
+{
+width: 800px;
+height: 400px;
+margin: auto;
+}
+.carousel .carousel-caption
+{
+    background-color: rgba(255,255,255,.5);
+    
+}
+textarea.rounded{
+    resize: none;
+}
+
+
+
+b.line
+{
+width: 80px;
+height: 5px;
+background-color: #333;
+border-radius: 10px;
+
+}
+
+.card
+{
+    transition: 0.5s;
+}
+
+.total .card::before,
+.person .card::before,
+.total .card::after
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+transform: scale(0);
+background-color: rgba(12, 149, 229, 0.3);
+transform-origin: top left;
+transition: 0.5s;
+}
+.total .card::after
+{
+    transform-origin: bottom right;
+}
+.total .card:hover::before,
+.total .card:hover::after
+{
+transform: scale(1);
+}
+.person .card::before
+{
+transform: scale(1);
+background-color: rgba(0,0,0,.5);
+}
+.person .card:hover::before
+{
+background-color: rgba(12, 149, 229, 0.3);
+}
+.person .card:hover
+{
+    transform: scale(0.9);
+}
+.person .card .row2 img
+{
+height:90px;
+width: 90px;
+border-radius: 50%;
+object-fit: contain;
+}
+
+h3.title
+{
+color: white;
+background: linear-gradient(to top right, #2e2e2e 17%,
+#ffffff 69%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+
+
